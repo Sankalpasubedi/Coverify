@@ -1,0 +1,112 @@
+body{
+ margin: 0;
+ padding: 0;
+ background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+ height: 100vh;
+
+}
+.box{
+margin-left: 280px;
+ width: 70%;
+ height: 85%;
+ background-color: #ffffff;
+ border-radius: 20px;
+ box-shadow: 0px 25px 40px #1687d933;
+}
+.top{
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.check{
+    width:17% !important; 
+    padding: 8px !important;
+    font-size: 16px !important;
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none !important; 
+    border-radius: 1px !important;
+    cursor: pointer !important;
+    margin-top: 5px !important; 
+    margin-left: 300px !important;         
+}
+.check:hover{
+
+    background-color: #45a049!important; 
+}
+.buy{
+    width:17%;
+    padding: 8px !important;
+    font-size: 16px !important;
+    background-color: #333333;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 17%;
+    padding: 11px 7px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 5px !important; 
+    margin-left: 600px !important; 
+}
+.buy:hover {
+    background-color: #fff;
+    color: #333333;
+    border: 1px solid #333333;
+}
+.check1{
+    width:193px !important; 
+    padding: 8px !important;
+    font-size: 16px !important;
+    background-color: #4CAF50 !important;
+    text-align: center !important;
+    color: white !important;
+    border: none !important; 
+    border-radius: 1px !important;
+    margin-top: 5px !important; 
+    margin-left: 567px !important;         
+}
+.remove{
+    font-size: medium;
+    background-color: #333333;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 100%;
+    padding: 11px 7px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.remove:hover {
+    background-color: #fff;
+    color: #333333;
+    border: 1px solid #333333;
+}

@@ -1,0 +1,67 @@
+input, select, .navbar {
+    font-size: 16pt;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    width: 45px;
+    border-radius: 100px;
+}
+
+.cent {
+    padding-left: 150px;
+}
+
+.cart img {
+    width: 35px;
+}
+
+.navbar {
+    background-color: #4285f4;
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+    padding: 0px 10px;
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.navbar a:hover {
+    transform: scale(1.5);
+    color: white;
+    text-shadow: 1px 1px grey;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+        *{
+            font-family: 'Signika Negative', sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+                max-width: 400px;
+                margin: 5% auto;
+                padding: 50px;
+                background-color: #f7f7f7;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                transition: all 0.2s ease-in;
+            }
+
+         .container:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            }
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 97%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #login-link {
+  color: #007bff; 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 16px; 
+  margin-bottom: 10px; 
+  display: block; 
+  text-align: center; 
+}
+
+#login-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #0056b3; /* Change the link color on hover */
+}
+.mid{
+    text-align: center;
+}
+
+    </style>
+    <script>
+    function validateForm() {
+      
+        var username = document.getElementById("username").value;
+        if (/[^a-zA-Z]/.test(username)) {
+            alert("Username can only contain Alphabets.");
+            return false;
+        }
+
+        var email = document.getElementById("email").value;
+        var emailRegex = /^[A-Za-z0-9._%+-]+@gmail\.com$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+       
+        return true;
+    }
+</script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form action="php/registration.php" method="POST" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <label class="mid">Already have an id?<br><a href="index.php" id="login-link">Login here</a></label>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
